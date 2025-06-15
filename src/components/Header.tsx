@@ -26,7 +26,7 @@ const Header = () => {
                 Dr. Akkireddy Nandini, MD
               </h1>
             </a>
-            <p className="text-sm text-medical-gray">Psychiatry Specialist</p>
+            <p className="text-sm text-medical-gray font-bold">Psychiatry Specialist</p>
           </div>
 
           {/* Desktop Navigation */}
