@@ -28,12 +28,12 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden md:flex space-x-16 absolute left-1/2 transform -translate-x-1/2">
+          <nav className="hidden md:flex space-x-16 absolute left-1/2 transform -translate-x-1/2 translate-x-8">
             {navigationItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-medical-blue transition-colors text-lg"
+                className="text-gray-600 hover:text-medical-blue transition-colors text-lg font-bold"
               >
                 {item.name}
               </a>
