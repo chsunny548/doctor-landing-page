@@ -1,45 +1,33 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Heart, Activity, Shield, Pill, Stethoscope, ClipboardList } from 'lucide-react';
+import { Brain, Heart, Activity, Shield, Pill, Stethoscope, ClipboardList, CloudRain, Syringe, Baby  } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Heart,
-      title: "Preventive Care",
-      description: "Comprehensive health screenings, vaccinations, and wellness exams to prevent illness and maintain optimal health.",
-      features: ["Annual Physical Exams", "Health Risk Assessments", "Vaccination Programs", "Cancer Screenings"]
+      icon: Brain,
+      title: "Mental Health Assessment & Diagnosis",
     },
     {
       icon: Activity,
-      title: "Chronic Disease Management",
-      description: "Expert care for ongoing health conditions with personalized treatment plans and regular monitoring.",
-      features: ["Diabetes Management", "Hypertension Care", "Heart Disease", "Arthritis Treatment"]
-    },
-    {
-      icon: Stethoscope,
-      title: "Diagnostic Services",
-      description: "Advanced diagnostic testing and evaluation to accurately identify and address health concerns.",
-      features: ["Laboratory Testing", "ECG/EKG", "Pulmonary Function Tests", "Diagnostic Imaging Coordination"]
+      title: "Depression, Anxiety  & Stress",
     },
     {
       icon: Pill,
       title: "Medication Management",
-      description: "Comprehensive medication review and management to ensure safe and effective treatment.",
-      features: ["Prescription Management", "Drug Interaction Screening", "Generic Alternatives", "Medication Education"]
     },
     {
-      icon: Shield,
-      title: "Acute Care",
-      description: "Prompt treatment for sudden illnesses and urgent medical concerns in a comfortable office setting.",
-      features: ["Cold & Flu Treatment", "Minor Infections", "Urgent Medical Issues", "Same-Day Appointments"]
+      icon: Syringe,
+      title: "Addiction & Substance Use Related Treatment",
     },
     {
-      icon: ClipboardList,
-      title: "Health Consultations",
-      description: "Personalized health consultations and second opinions to help you make informed healthcare decisions.",
-      features: ["Second Opinions", "Treatment Planning", "Health Education", "Lifestyle Counseling"]
+      icon: Heart,
+      title: "Emotional Wellness & Councelling",
+    },
+    {
+      icon: Baby,
+      title: "Child, Adolescent & Adult Psychiatry",
     }
   ];
 
@@ -58,7 +46,7 @@ const ServicesSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg flex flex-col justify-center items-center">
               <CardHeader className="text-center pb-4">
                 <div className="bg-gradient-to-br from-medical-blue to-medical-navy w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <service.icon className="h-8 w-8 text-white" />
@@ -67,7 +55,7 @@ const ServicesSection = () => {
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="pt-0">
+              {/* <CardContent className="pt-0">
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {service.description}
                 </p>
@@ -79,7 +67,7 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-              </CardContent>
+              </CardContent> */}
             </Card>
           ))}
         </div>
