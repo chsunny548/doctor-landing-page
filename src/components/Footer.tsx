@@ -78,7 +78,7 @@ const Footer = () => {
               <div className="flex items-start">
                 <Phone className="h-4 w-4 text-medical-blue mt-1 mr-3 flex-shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold">+91 7008935890</p>
+                  <p className="text-sm font-semibold">+91 9999999999</p>
                   <p className="text-xs text-gray-400">24/7 Emergency Line</p>
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Footer = () => {
               <p className="text-sm font-semibold text-red-100">Medical Emergency?</p>
               <p className="text-xs text-red-200">
                 For life-threatening emergencies, call 911 immediately. 
-                For urgent after-hours care, call +91 7008935890.
+                For urgent after-hours care, call +91 9999999999.
               </p>
             </div>
           </div>

@@ -46,7 +46,7 @@ const Header = () => {
           {/* <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center text-medical-blue">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="font-semibold">+91 7008935890</span>
+              <span className="font-semibold">+91 9999999999</span>
             </div>
             <Button 
               className="bg-medical-blue hover:bg-medical-navy"
@@ -81,7 +81,7 @@ const Header = () => {
               ))}
               <div className="flex items-center text-medical-blue py-2">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+91 7008935890</span>
+                <span>+91 9999999999</span>
               </div>
               <Button 
                 className="bg-medical-blue hover:bg-medical-navy mt-2"

@@ -8,7 +8,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Phone",
-      primary: "+91 7008935890",
+      primary: "+91 9999999999",
       secondary: "24/7 Emergency Line Available"
     },
     {
@@ -195,7 +195,7 @@ const ContactSection = () => {
                     <input 
                       type="tel" 
                       className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-medical-blue focus:border-transparent"
-                      placeholder="+91 7008935890"
+                      placeholder="+91 9999999999"
                     />
                   </div>
                   <div>

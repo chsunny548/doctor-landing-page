@@ -145,7 +145,7 @@ const PatientInfoSection = () => {
               <h3 className="text-lg font-semibold text-red-800 mb-2">Emergency Information</h3>
               <p className="text-red-700 mb-4">
                 For life-threatening emergencies, call 911 immediately. For urgent medical concerns after hours, 
-                call our office at +91 7008935890 to reach our 24/7 answering service.
+                call our office at +91 9999999999 to reach our 24/7 answering service.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -153,7 +153,7 @@ const PatientInfoSection = () => {
                   <p className="text-sm text-red-600">Chest pain, difficulty breathing, severe injuries</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-red-800">After Hours: +91 7008935890</h4>
+                  <h4 className="font-semibold text-red-800">After Hours: +91 9999999999</h4>
                   <p className="text-sm text-red-600">Urgent concerns, medication questions</p>
                 </div>
               </div>

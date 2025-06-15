@@ -95,7 +95,7 @@ const ServicesSection = () => {
                 Book Your Appointment
               </button>
               <button className="border-2 border-medical-blue text-medical-blue hover:bg-medical-blue hover:text-white px-8 py-3 rounded-lg font-semibold transition-all">
-                Call +91 7008935890
+                Call +91 9999999999
               </button>
             </div>
           </div>
