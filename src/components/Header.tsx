@@ -21,9 +21,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-medical-blue">
-              Dr. Akkireddy Nandini, MD
-            </h1>
+            <a href="#home">
+              <h1 className="text-2xl font-bold text-medical-blue">
+                Dr. Akkireddy Nandini, MD
+              </h1>
+            </a>
             <p className="text-sm text-medical-gray">Psychiatry Specialist</p>
           </div>
 
