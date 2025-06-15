@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, Heart, Activity, Shield, Pill, Stethoscope, ClipboardList, CloudRain, Syringe, Baby  } from 'lucide-react';
 import CalendlyPopup from './CalendlyPopup';
+import ReviewsSection from '@/components/ReviewsSection';
 
 const ServicesSection = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -72,6 +73,9 @@ const ServicesSection = () => {
               </CardContent> */}
             </Card>
           ))}
+        </div>
+        <div>
+          <ReviewsSection />
         </div>
 
         {/* Call to Action */}
