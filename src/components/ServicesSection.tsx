@@ -1,9 +1,11 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, Heart, Activity, Shield, Pill, Stethoscope, ClipboardList, CloudRain, Syringe, Baby  } from 'lucide-react';
+import CalendlyPopup from './CalendlyPopup';
 
 const ServicesSection = () => {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
   const services = [
     {
       icon: Brain,
@@ -82,7 +84,10 @@ const ServicesSection = () => {
               Schedule a consultation today to discuss your health goals and create a personalized care plan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-medical-blue hover:bg-medical-navy text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              <button 
+                className="bg-medical-blue hover:bg-medical-navy text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                onClick={() => setIsCalendlyOpen(true)}
+              >
                 Book Your Appointment
               </button>
               <button className="border-2 border-medical-blue text-medical-blue hover:bg-medical-blue hover:text-white px-8 py-3 rounded-lg font-semibold transition-all">
@@ -91,6 +96,12 @@ const ServicesSection = () => {
             </div>
           </div>
         </div>
+
+        <CalendlyPopup 
+          url="https://calendly.com/chsunny548"
+          isOpen={isCalendlyOpen}
+          onClose={() => setIsCalendlyOpen(false)}
+        />
       </div>
     </section>
   );

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
+import CalendlyPopup from './CalendlyPopup';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   const navigationItems = [
     { name: 'Home', href: '#home' },
@@ -43,7 +45,10 @@ const Header = () => {
               <Phone className="h-4 w-4 mr-2" />
               <span className="font-semibold">+91 7008935890</span>
             </div>
-            <Button className="bg-medical-blue hover:bg-medical-navy">
+            <Button 
+              className="bg-medical-blue hover:bg-medical-navy"
+              onClick={() => setIsCalendlyOpen(true)}
+            >
               Book Appointment
             </Button>
           </div>
@@ -75,13 +80,22 @@ const Header = () => {
                 <Phone className="h-4 w-4 mr-2" />
                 <span>+91 7008935890</span>
               </div>
-              <Button className="bg-medical-blue hover:bg-medical-navy mt-2">
+              <Button 
+                className="bg-medical-blue hover:bg-medical-navy mt-2"
+                onClick={() => setIsCalendlyOpen(true)}
+              >
                 Book Appointment
               </Button>
             </nav>
           </div>
         )}
       </div>
+
+      <CalendlyPopup 
+        url="https://calendly.com/chsunny548"
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+      />
     </header>
   );
 };

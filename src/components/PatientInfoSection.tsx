@@ -124,7 +124,7 @@ const PatientInfoSection = () => {
           ))}
         </div>
 
-        {/* Policies Section */}
+        {/* Policies Section
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Office Policies</h3>
           <div className="grid md:grid-cols-2 gap-6">
@@ -135,7 +135,7 @@ const PatientInfoSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Emergency Information */}
         <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-16">

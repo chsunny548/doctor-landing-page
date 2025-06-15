@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Award, Clock, Shield, Users } from 'lucide-react';
+import CalendlyPopup from './CalendlyPopup';
 
 const HeroSection = () => {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
   return (
     <section id="home" className="relative bg-gradient-to-br from-primary-50 to-blue-100 py-20">
       <div className="container mx-auto px-4">
@@ -25,13 +28,23 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="bg-medical-blue hover:bg-medical-navy">
+              <Button 
+                size="lg" 
+                className="bg-medical-blue hover:bg-medical-navy"
+                onClick={() => setIsCalendlyOpen(true)}
+              >
                 Schedule Consultation
               </Button>
               <Button variant="outline" size="lg" className="border-medical-blue text-medical-blue">
                 Learn More About Our Services
               </Button>
             </div>
+
+            <CalendlyPopup 
+              url="https://calendly.com/chsunny548"
+              isOpen={isCalendlyOpen}
+              onClose={() => setIsCalendlyOpen(false)}
+            />
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
